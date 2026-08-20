@@ -36,7 +36,7 @@
             </a>
 
             {{-- Links Desktop --}}
-            <div class="hidden lg:flex items-center gap-2">
+            <div class="hidden md:flex items-center gap-2">
                 @foreach($navLinks as $link)
                     <a
                         href="{{ route($link['route']) }}"
@@ -48,7 +48,7 @@
             </div>
 
             {{-- CTA Desktop --}}
-            <div class="hidden lg:flex items-center gap-3">
+            <div class="hidden md:flex items-center gap-3">
                 <a href="{{ $wppLink }}" target="_blank" rel="noopener noreferrer"
                    class="btn btn-whatsapp btn-sm">
                     <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
@@ -61,7 +61,7 @@
             {{-- Hamburger Mobile --}}
             <button
                 @click="open = !open"
-                class="lg:hidden p-2 rounded-lg transition-colors text-[var(--color-charcoal)] hover:bg-[var(--color-ivory-dark)]"
+                class="md:hidden p-2 rounded-lg transition-colors text-[var(--color-charcoal)] hover:bg-[var(--color-ivory-dark)]"
                 aria-label="Menu"
             >
                 <svg x-show="!open" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -82,7 +82,7 @@
             x-transition:leave="transition ease-in duration-150"
             x-transition:leave-start="opacity-100 translate-y-0"
             x-transition:leave-end="opacity-0 -translate-y-2"
-            class="lg:hidden bg-white rounded-2xl shadow-xl mt-2 mb-4 overflow-hidden border border-[var(--color-border)]"
+            class="md:hidden bg-white rounded-2xl shadow-xl mt-2 mb-4 overflow-hidden border border-[var(--color-border)]"
             @click.away="open = false"
         >
             <div class="p-4 space-y-1">
