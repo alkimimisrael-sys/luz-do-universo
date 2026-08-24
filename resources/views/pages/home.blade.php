@@ -16,7 +16,7 @@
 
 {{-- ═══════ HERO ═══════ --}}
 <section class="hero-section" id="inicio">
-    <div class="hero-bg" style="background-image: url('{{ asset('images/hero.png') }}');"></div>
+    <div class="hero-bg" style="background-image: url('{{ asset('images/fachada.jpg') }}');"></div>
     <div class="hero-overlay"></div>
     <div class="hero-pattern"></div>
 
